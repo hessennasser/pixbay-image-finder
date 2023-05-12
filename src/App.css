@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rebeccapurple;
+}
+
+nav .logo {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Form */
+
+form {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+form .search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-bottom: 2px solid rebeccapurple;
+    flex-grow: 1;
+}
+
+form .search-btn {
+    background-color: rebeccapurple;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Images */
+
+.images-container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px; */
+    gap: 15px;
+    max-width: 95%;
+    margin: 40px auto;
+    columns: 5 340px;
+    list-style: none;
+}
+
+.single-img {
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+}
+
+.single-img img {
+    width: 100%;
+    height: auto;
+}
+
+.img-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.img-info div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-info .icons {
+    display: flex;
+    gap: 10px;
+}
+
+.img-info div span {
+    text-transform: capitalize;
+}
+
+.img-info svg {
+    font-size: 1.2rem;
+}
+
+.download-btn,
+.view-btn {
+    cursor: pointer;
+}
+
+.error {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* lightbox */
+
+.lightbox-overly {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.lightbox-wrapper {
+    max-width: 70%;
+    height: 85%;
+    margin: 3rem auto;
+    padding: 4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.lightbox-wrapper img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.close-btn {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
